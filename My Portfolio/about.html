@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio Website</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+                Alex <span> Phung </span>
+            </div>
+            <div class="links">
+                <div class="link" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="100"><a href="index.html">Home</a></div>
+                <div class="link" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="200"><a href="about.html">About</a></div>
+                <div class="link" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="300"><a href="skills.html">Skills</a></div>
+                <div class="link" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="400"><a href="projects.html">Projects</a></div>
+                <div class="link" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="500"><a href="contact.html">Contact</a></div>
+            </div>
+        </div>
+        <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        <div class="dropdown">
+            <div class="links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="skills.html">Skills</a>
+                <a href="projects.html">Projects</a>
+                <a href="contact.html">Contact</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+
+
+<!------about me-------->
+
+    <section>
+        <div class="About-container">
+            <!-- Top Content Area -->
+            <div class="About-content">
+                <!-- Heading with Animation -->
+                <h1 data-aos="fade-down" data-aos-duration="1500" data-aos-delay="700">What to know <span>about me?</span></h1>
+            
+            <!-- Introduction Text -->
+                <p data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1100">In this Page, you can take a brief look at my past and present. In how i was infleuced by the world of technology.</p>
+            </div>                  
+        </div>        
+    </section>
+
+
+<!------My Experience-------->
+
+    <section class="My Experience" id="My Education">
+        <h2 class="experience-heading">My Experience</h2>
+        <div class="timeline-items">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-date">2017-2022</div>
+                    <h3>Parkhall Academy</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-date">2022-2024</div>
+                    <h3>BMET Sutton Coldfield College</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-date">21/10/24-25/10/24</div>
+                    <h3>Birmingham Tech Week/Work Experience</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-date">22/03/24 - Present</div>
+                    <h3>Chefs Takeaway/Part-time Job</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-date">23/11/19 - 23/2/20</div>
+                    <h3>Duke oF Edingburgh Awards/Volunteering</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!------Footer-------->
+
+    <footer class="main-footer">
+        <div class="main-footer__upper">
+            <div class="main-footer__row-1">
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/alex-phung-32a748317/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/Aphungy"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.instagram.com/phungy.88/#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://api.whatsapp.com/send/?phone=%2B447539939143"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+                <a href="assests/Alex_Phung_CV.pdf" class="download-btn">Download CV</a>
+            </div>
+            <div class="main-footer__row-2">
+                <h3 class="main-footer__heading">Alex <span>Phung</span></h3>
+                <p class="main-footer__short-desc">
+                    Welcome to my portfolio website. I'm a passionate IT professional focused on delivering innovative solutions and staying current with the latest technologies.
+                </p>
+            </div>
+        </div>
+        <div class="main-footer__lower">
+            <div class="main-container">
+                &copy; Copyright 2025. Made by<a href="index.html">Alex Phung</a>
+            </div>
+        </div>
+    </footer>
+
+<!------JavaScript Libraries-------->
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({offset:0,});
+    </script>
+    <script src="script.js"></script>
+
+</body>
+</html>
