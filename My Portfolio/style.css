@@ -783,6 +783,23 @@ section {
     transition: 0.3s ease;
 }
 
+.projects__row-img-cont {
+    flex: 1;
+    max-width: 500px;
+    display: flex;           /* Added */
+    justify-content: center; /* Added */
+    align-items: center;     /* Added */
+}
+
+.projects__row-img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    object-fit: contain;     /* Added */
+    max-height: 300px;       /* Added */
+}
+
 .projects__row:hover {
     transform: translateY(-5px);
     box-shadow: 0 0 20px var(--accent-color);
@@ -851,10 +868,11 @@ section {
 
     .projects__row-img-cont {
         max-width: 100%;
+        padding: 0 1rem;     /* Added */
     }
 
-    .projects__row-content {
-        padding: 1rem 0;
+    .projects__row-img {
+        max-height: 250px;   /* Slightly smaller for mobile */
     }
 }
 
