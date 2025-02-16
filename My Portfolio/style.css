@@ -325,12 +325,11 @@ section {
 /* Responsive styles for About section */
 @media (max-width: 884px) {
     .About-container {
-        padding: 20px;
+        margin-top: -100px;  /* Reduced from -200px */
     }
     
     .About-content {
-        width: 100%;
-        padding: 0 15px;
+        margin-top: 150px;  /* Reduced from 300px */
     }
 }
 
@@ -526,12 +525,11 @@ section {
 
 @media (max-width: 884px) {
     .Skills-text-container {
-        padding: 20px;
+        margin-top: -100px;  /* Reduced from -200px */
     }
     
     .Skills-text-content {
-        width: 100%;
-        padding: 0 15px;
+        margin-top: 150px;  /* Reduced from 300px */
     }
 }
 
@@ -748,12 +746,11 @@ section {
 
 @media (max-width: 884px) {
     .project-heading-container {
-        padding: 20px;
+        margin-top: -100px;  /* Reduced from -200px */
     }
     
     .project-heading-content {
-        width: 100%;
-        padding: 0 15px;
+        margin-top: 150px;  /* Reduced from 300px */
     }
 }
 
@@ -924,12 +921,11 @@ section {
 /* Responsive styles for About section */
 @media (max-width: 884px) {
     .contact-container {
-        padding: 20px;
+        margin-top: -100px;  /* Reduced from -200px */
     }
     
     .contact-content {
-        width: 100%;
-        padding: 0 15px;
+        margin-top: 150px;  /* Reduced from 300px */
     }
 }
 
