@@ -1,14 +1,40 @@
 4// Mobile Navigation Functions
 // Opens the mobile navigation menu
+// Mobile Navigation Functions
+const nav = document.querySelector('nav');  // Added nav selection
+
 function hamburg() {
-    const navbar = document.querySelector(".dropdown")
-    navbar.style.transform = "translateY(0px)"
+    const navbar = document.querySelector(".dropdown");
+    const cancelBtn = document.querySelector(".cancel");
+    const hamburgerBtn = document.querySelector(".hamburg");
+    
+    navbar.style.transform = "translateY(0px)";
+    nav.classList.add("nav-active");
+    
+    // Show cancel button and hide hamburger
+    cancelBtn.style.display = "block";
+    cancelBtn.style.opacity = "1";
+    cancelBtn.style.visibility = "visible";
+    
+    hamburgerBtn.style.opacity = "0";
+    hamburgerBtn.style.visibility = "hidden";
 }
 
-// Closes the mobile navigation menu
 function cancel() {
-    const navbar = document.querySelector(".dropdown")
-    navbar.style.transform = "translateY(-500px)"
+    const navbar = document.querySelector(".dropdown");
+    const cancelBtn = document.querySelector(".cancel");
+    const hamburgerBtn = document.querySelector(".hamburg");
+    
+    navbar.style.transform = "translateY(-500px)";
+    nav.classList.remove("nav-active");
+    
+    // Hide cancel button and show hamburger
+    cancelBtn.style.display = "none";
+    cancelBtn.style.opacity = "0";
+    cancelBtn.style.visibility = "hidden";
+    
+    hamburgerBtn.style.opacity = "1";
+    hamburgerBtn.style.visibility = "visible";
 }
 
 // Typewriter Effect Configuration

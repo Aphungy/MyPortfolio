@@ -43,6 +43,7 @@ nav {
     height: 10vh;
     position: sticky;
     background: #1d1c1c;
+    z-index: 999; /* High z-index but below dropdown */
 }
 
 /* Container for logo and navigation links */
@@ -86,29 +87,59 @@ nav {
 }
 
 /* Mobile Navigation Menu Icons */
+
 .hamburg,
 .cancel {
     cursor: pointer;
     position: absolute;
     right: 15px;
-    top: 10px;
+    top: 15px;
     color: white;
-    display: none;
     font-size: clamp(2.5rem, 0.5rem + 5vw, 3rem);
+    z-index: 1001;
+    transition: all 0.3s ease;
+}
+
+.hamburg {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+
+.cancel {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* Show cancel icon when nav is active */
+.nav-active .hamburg {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.nav-active .cancel {
+    display: block;
+    opacity: 1;
+    visibility: visible;
 }
 
 /* Mobile Dropdown Menu */
 .dropdown {
-    z-index: 100;
-    position: absolute;
+    z-index: 1000;
+    position: fixed;
     top: 0;
+    left: 0;
+    right: 0;
     transform: translateY(-500px);
     width: 100%;
     height: auto;
     backdrop-filter: blur(4px) brightness(40%);
     box-shadow: 0 0 20px black;
-    transition: 0.2s linear;
+    transition: 0.3s ease;
+    padding-top: 60px; /* Add padding to prevent content from going under the icons */
 }
+
 
 .dropdown .links a {
     display: flex;
@@ -122,6 +153,46 @@ nav {
 
 .dropdown .links a:hover {
     background-color: var(--primary-color);
+}
+
+@media (min-width: 885px) {
+    .hamburg,
+    .cancel {
+        display: none;
+    }
+}
+
+/* Show hamburger icon on mobile */
+@media (max-width: 884px) {
+    .hamburg {
+        display: block;
+    }
+}
+    
+    /* When menu is active, hide hamburger and show cancel */
+    .nav-active .hamburg {
+        opacity: 0;
+        visibility: hidden;
+    }
+    
+    .nav-active .cancel {
+        display: block;
+        opacity: 1;
+        visibility: visible;
+    }
+
+@media (min-width: 885px) {
+    .hamburg,
+    .cancel {
+        display: none;
+    }
+}
+
+/* Show hamburger icon on mobile */
+@media (max-width: 884px) {
+    .hamburg {
+        display: block;
+    }
 }
 
 
@@ -1350,7 +1421,8 @@ section {
     box-shadow: 0 0 20px rgba(0, 168, 255, 0.3);
     border-radius: 1rem;
     overflow: hidden;
-    box-shadow: 0 0 20px rgba(0, 168, 255, 0.3);
+    position: relative;
+    z-index: 1; /* Lower z-index to ensure it stays below the dropdown */
 }
 
 .project-details__showcase-img {
