@@ -1422,7 +1422,7 @@ section {
     border-radius: 1rem;
     overflow: hidden;
     position: relative;
-    z-index: 1; /* Lower z-index to ensure it stays below the dropdown */
+    z-index: 1; 
 }
 
 .project-details__showcase-img {
